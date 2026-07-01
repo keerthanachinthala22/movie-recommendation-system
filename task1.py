@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv("tmdb_5000_movies.csv")
+print(df.shape)
+print(df.head(5))
+print(df.isnull().sum())
+print("\nMovie Title Column : title")
+print("Text Column Used : overview")
+print(df.info())
+df.drop(["tagline", "runtime", "release_date"], axis=1, inplace=True)
+print(df.columns)
