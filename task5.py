@@ -19,5 +19,8 @@ def recommend(movie_name, top_n=5):
     print("Recommended Movies:\n")
     for i in scores:
         print(df.iloc[i[0]]["title"])
-recommend("Avatar")   
+recommend("Avatar")
+recommend("Batman Begins")
+recommend("Titanic")
+
     
